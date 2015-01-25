@@ -59,7 +59,7 @@ list(set = set, get = get,
 ################################################################################################
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+      ## Return a matrix that is the inverse of 'x'
   
   m <- x$getInverseMatrix()
   if(!is.null(m)) {
