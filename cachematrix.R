@@ -52,9 +52,9 @@ list(set = set, get = get,
 # matrix that was entered into makeCacheMatrix EITHER by calculating it, OR by returning the value 'm' 
 # from the cache (in cases where the inverse of a given matrix is being requested more than once)
 #
-# This is done by checking if 'm' is  Not NULL: if(!is.null(m)).
+# This is done by checking if 'm' is  Not NULL: if(!is.null(m))
 # When 'm' IS null, it means the inverse matrix has not yet been calculated, so it gets calculated.
-# on subsequent iterations, m <- x$getInverseMatrix() will set 'm' to the inverse matrix, making
+# On subsequent iterations, m <- x$getInverseMatrix() will set 'm' to the inverse matrix, making
 # if(!is.null(m)) = TRUE, thus executing the lines: return 'm', rather than re-calculating 'm'.
 ################################################################################################
 
